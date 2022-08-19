@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Avatar, Button, Paper, Grid, Typography, Container, TextField } from '@material-ui/core';
-import LockOutlinedIcon from '@material-ui/icons/LockOpenOutlined';
+import { Avatar, Button, Paper, Grid, Typography, Container} from '@material-ui/core';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import useStyles from './styles';
 import Input from './Input';
 
@@ -48,7 +48,7 @@ const Auth = () => {
                     <Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
                         {isSignup? 'Sign Up' : 'Sign In'}
                     </Button>
-                    <Grid container justify="flex-end">
+                    <Grid container justifyContent="flex-end">
                         <Grid item>
                             <Button onClick={switchMode}> 
                                 { isSignup ? "Already have an account? Sign In" : "Don't have an account? Sign Up" }
